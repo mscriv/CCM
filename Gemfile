@@ -18,7 +18,7 @@ gem 'spring',        group: :development
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'prawn'
-
+gem 'active_attr'
 
 
 

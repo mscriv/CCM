@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-
+  resources :messages
   resources :invoices
 
   resources :line_items
