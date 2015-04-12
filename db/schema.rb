@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150410125547) do
+ActiveRecord::Schema.define(version: 20150412172330) do
 
   create_table "comments", force: true do |t|
     t.string   "name"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20150410125547) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.decimal  "amount_paid"
   end
 
   add_index "invoices", ["user_id"], name: "index_invoices_on_user_id"

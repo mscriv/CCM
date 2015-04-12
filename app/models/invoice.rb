@@ -8,4 +8,6 @@ class Invoice < ActiveRecord::Base
     # convert to array so it doesn't try to do sum on database directly
     line_items.to_a.sum(&:full_price)
   end
+
+  scope :sales, -> { where.not(amount_paid: nil)}
 end
