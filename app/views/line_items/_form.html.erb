@@ -1,0 +1,17 @@
+
+<%= form_for([@invoice,LineItem.new], remote: true) do |f| %>
+
+<div class="form-group">
+  <%= f.label :name %><br>
+  <%= f.text_field :name, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :quantity %><br>
+  <%= f.text_area :quantity, class: "form-control" %>
+</div>
+<div class="form-group">
+  <%= f.label :amount %><br>
+  <%= f.text_field :amount, class: "form-control" %>
+</div>
+
+<% end %>

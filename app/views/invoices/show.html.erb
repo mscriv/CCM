@@ -1,0 +1,25 @@
+<h1>Order #<%= @invoice.invoice_number %></h1>
+
+<table id="line_items">
+  <tr>
+    <th>Name</th>
+    <th>Qty</th>
+    <th class="price">Amount</th>
+    <th class="price">Total Amount</th>
+  </tr>
+  <% @invoice.line_items.each do |line_item| %>
+      <tr class="<%= cycle :odd, :even %>">
+        <td><%= line_item.name %></td>
+        <td class="qty"><%= line_item.quantity %></td>
+        <td class="price"><%= number_to_currency(line_item.amount) %></td>
+        <td class="price"><%= number_to_currency(line_item.full_price) %></td>
+      </tr>
+  <% end %>
+  <tr>
+    <td class="total price" colspan="4">
+      Amount Due: <%= number_to_currency(@invoice.total_price) %>
+    </td>
+  </tr>
+</table>
+
+<p><%= link_to "Printable Receipt (PDF)", invoice_path(@invoice, format: "pdf") %></p>

@@ -1,0 +1,13 @@
+<h1>Invoices</h1>
+
+<table>
+  <tbody>
+<% @invoice.each do |invoice| %>
+  <tr>
+  <td><%= invoice.invoice_number %></td>
+  <td><%= invoice.user.business_name %></td>
+  <td><%= invoice.created_at.strftime('%B, %d, %Y') %></td>
+  </tr>
+<% end %>
+  </tbody>
+</table>
