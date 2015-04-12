@@ -1,0 +1,5 @@
+  <h1> Sales</h1>
+  <% @sales.each do |invoice| %>
+  <%= invoice.user.business_name %>
+  <%= number_to_currency(invoice.amount_paid) %>
+  <% end %>

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'dashboards/show'
+
   resources :messages
   resources :invoices
 
