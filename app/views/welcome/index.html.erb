@@ -5,13 +5,14 @@
 <body>
 
  <header>
-  <h2>CCS</h2>
-  <h4>Continuum Consulting Services</h4>
+  <%= image_tag 'logo_1.png' %>
+  <h4>Continuum Consulting Management Group</h4>
  </header>
+
  <div class="center">
  <%='About Us'%>
  <%='Expertise & Impact'%>
- <%='Expertise & Impact'%>
+ <%='Mastermind Group'%>
  <%='Contact Us'%>
  <%='Blog'%>
 
@@ -23,28 +24,27 @@
           <div id="openModal" class="modalDialog">
             <div>
               <a href="#close" title="Close" class="close">X</a>
-              <h2>Modal Box</h2>
-              <p>This is a sample modal box that can be created using the powers of CSS3.</p>
-              <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+              <h2>About Us</h2>
+             <%= render 'pages/about'%>
             </div>
           </div>
 
-          <a href="#openModal"><div class="text"><%=image_tag 'industry.png'%></div></a>
-          <div id="openModal" class="modalDialog">
+
+          <a href="#openModal2"><div class="text"><%=image_tag 'industry.png'%></div></a>
+          <div id="openModal2" class="modalDialog">
             <div>
               <a href="#close" title="Close" class="close">X</a>
-              <h2>Modal Box</h2>
-              <p>This is a sample modal box that can be created using the powers of CSS3.</p>
-              <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+             <%= render 'pages/company_profile'%>
             </div>
           </div>
 
-          <a href="#openModal"><div class="text"><%=image_tag 'Army_1.png'%></div></a>
-          <div id="openModal" class="modalDialog">
+
+
+          <a href="#openModal3"><div class="text"><%=image_tag 'Army_1.png'%></div></a>
+          <div id="openModal3" class="modalDialog">
             <div>
               <a href="#close" title="Close" class="close">X</a>
-              <h2>Modal Box</h2>
-              <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+              <%= render 'pages/mission'%>
               <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
             </div>
           </div>
@@ -52,34 +52,29 @@
         </div>
 
         <div class="newspaper">
-          <a href="#openModal"><div class="text"><%=image_tag 'industry.png'%></div></a>
-          <div id="openModal" class="modalDialog">
+          <a href="#openModal4"><div class="text"><%=image_tag 'industry.png'%></div></a>
+          <div id="openModal4" class="modalDialog">
             <div>
               <a href="#close" title="Close" class="close">X</a>
-              <h2>Modal Box</h2>
-              <p>This is a sample modal box that can be created using the powers of CSS3.</p>
-              <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+              <%= render 'pages/core_values'%>
             </div>
           </div>
 
 
-          <a href="#openModal"><div class="text"><%=image_tag 'industry.png'%></div></a>
-          <div id="openModal" class="modalDialog">
+          <a href="#openModal5"><div class="text"><%=image_tag 'industry.png'%></div></a>
+          <div id="openModal5" class="modalDialog">
             <div>
               <a href="#close" title="Close" class="close">X</a>
-              <h2>Modal Box</h2>
-              <p>This is a sample modal box that can be created using the powers of CSS3.</p>
-              <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+              <%= render 'pages/highlights'%>
+
             </div>
           </div>
 
-          <a href="#openModal"><div class="text"><%=image_tag 'industry.png'%></div></a>
-          <div id="openModal" class="modalDialog">
+          <a href="#openModal6"><div class="text"><%=image_tag 'industry.png'%></div></a>
+          <div id="openModal6" class="modalDialog">
             <div>
               <a href="#close" title="Close" class="close">X</a>
-              <h2>Modal Box</h2>
-              <p>This is a sample modal box that can be created using the powers of CSS3.</p>
-              <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+              <%= render 'pages/leadership' %>
             </div>
           </div>
 

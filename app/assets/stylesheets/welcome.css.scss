@@ -25,8 +25,8 @@ h2, h4 {
 .wildlife {
   color: #ffffff;
   background-image: linear-gradient(to bottom, #c19e67, #c19e67, #e9d4b3);
-  padding: 2% 2%;
-  text-align: center;
+  padding: 1% 2%;
+  text-align: left;
   border-width: 10px;
   border-style: none;
   margin-top: 0px;
@@ -35,7 +35,7 @@ h2, h4 {
   margin-left: 250px;
   width: 725px;
   box-sizing: border-box;
-  height: 650px;
+  height: 600px;
 }
 
 ul { list-style-type: none; }
@@ -67,15 +67,15 @@ ul { list-style-type: none; }
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: #fff;
-  background: -moz-linear-gradient(#fff, #999);
-  background: -webkit-linear-gradient(#fff, #999);
-  background: -o-linear-gradient(#fff, #999);
+  background: #111;
+  background: -moz-linear-gradient(#111, #999);
+  background: -webkit-linear-gradient(#111, #999);
+  background: -o-linear-gradient(#111, #999);
 }
 
 .close {
   background: #606061;
-  color: #FFFFFF;
+  color: #111;
   line-height: 25px;
   position: absolute;
   right: -12px;
@@ -100,6 +100,12 @@ ul { list-style-type: none; }
 .newspaper {
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -webkit-column-width: 100px; /* Chrome, Safari, Opera */
-  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+  padding-bottom: 10px;
+
+}
+
+#openModal {
+  border-radius: 25px;
 
 }
