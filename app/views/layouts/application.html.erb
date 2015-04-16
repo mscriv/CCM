@@ -16,10 +16,7 @@
 </div>
 
 
-<nav class="menu">
-
-  <%= link_to 'CCM.blog', posts_path %>
-  <%= link_to 'Contact Us' %>
+<nav>
 
   <% if current_user %>
          Welcome, <%= current_user.first_name %>.
@@ -30,11 +27,8 @@
     <% end %>
   </nav>
 
-
-
-<div class="content">
 <%= yield %>
-</div>
+
 
 </body>
 </html>
