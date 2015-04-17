@@ -10,6 +10,29 @@ nav {
   padding-right: 200px;
 }
 
+.columnContainer {
+    float: left;
+    width: 920px;
+    clear: both;
+
+.leftcolumn {
+  width: 710px;
+  float: left;
+  margin-right: 15px
+}
+
+.rightColumn {
+  width: 185px;
+  float: left;
+  padding-top: 10px;
+  border-top: 1px solid #256857;
+  margin-bottom: 15px;
+  padding-left: 26px;
+  margin-left: 2%;
+}
+
+}
+
 }
 
 h2, h4 {
