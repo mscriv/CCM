@@ -5,18 +5,20 @@
 <body>
 
  <header>
+   <div class="center">
   <%= image_tag 'logo_1.png' %>
   <h4>Continuum Consulting Management Group</h4>
+   </div>
  </header>
 
  <div class="center">
- <%='About Us'%>
- <%='Expertise & Impact'%>
- <%='Mastermind Group'%>
+ <%=link_to'About Us'%>
+ <%=link_to'Expertise & Impact'%>
+ <%=link_to'Mastermind Group'%>
  <%=link_to 'Contact Us', new_message_path%>
- <%='Blog'%>
-
+ <%=link_to'Blog'%>
  </div>
+ 
   <div class="wildlife">
         <h1>Shaping The Future Together.</h1>
         <div class="newspaper">
