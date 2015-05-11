@@ -8,5 +8,6 @@ class User < ActiveRecord::Base
             format: { with: VALID_EMAIL_REGEX },
             uniqueness: { case_sensitive: false}
   validates :password, length: { minimum: 6}
-  validates :last_name, :first_name, presence: true
+  validates :last_name, :first_name, :industry, presence: true
+  validates :naics_code, length: { minimum: 6}, numericality: { only_integer: true }
 end

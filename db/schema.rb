@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150511221810) do
+ActiveRecord::Schema.define(version: 20150511224825) do
 
   create_table "comments", force: true do |t|
     t.string   "name"
@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 20150511221810) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "naics_code"
+    t.string   "industry"
   end
 
 end
