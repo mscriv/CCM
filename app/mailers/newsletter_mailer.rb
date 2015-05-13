@@ -3,7 +3,7 @@ class NewsletterMailer < ActionMailer::Base
 
   def monthly(newsletter)
     @newsletter = newsletter
-    mail to: Subscriber.all,
+    mail to: Proc.new { Subscriber.pluck(:email) },
     subject: "#{@newsletter.title}"
   end
 end
