@@ -3,7 +3,7 @@ class NewsletterMailer < ActionMailer::Base
 
   def monthly(newsletter)
     @newsletter = newsletter
-    mail to: Subscriber.pull,
+    mail to: "noreply@example.com", bcc: Subscriber.pull,
     subject: "#{@newsletter.title}"
   end
 end
