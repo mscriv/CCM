@@ -8,7 +8,6 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'thin'
 
 
-
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -33,6 +32,3 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-
-
-

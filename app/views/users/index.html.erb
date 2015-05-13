@@ -1,0 +1,39 @@
+<%= form_tag search_users_path, classa: 'form' do %>
+    <%= text_field_tag "search_query", nil, placeholder: 'Search text' %>
+    <%= submit_tag "Search", class: 'radius button tiny' %>
+<% end %>
+
+
+  <h1>Contacts</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Business Name</th>
+        <th>Industry</th>
+        <th>Naics Code</th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.first_name %></td>
+          <td><%= user.last_name %></td>
+          <td><%= user.phone %></td>
+          <td><%= user.email %></td>
+          <td><%= user.business_name %></td>
+          <td><%= user.industry %></td>
+          <td><%= user.naics_code %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>

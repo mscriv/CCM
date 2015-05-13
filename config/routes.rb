@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
 
+  resources :newsletters
+
+  resources :subscribers
+
   get 'dashboards/show'
 
   resources :messages
@@ -14,6 +18,12 @@ Rails.application.routes.draw do
 
   resources :posts do
   resources :comments
+  end
+
+  resources :users do
+   collection do
+     post 'search', to: 'users#search'
+   end
   end
 
   get 'signup', to: 'users#new', as: 'signup'
