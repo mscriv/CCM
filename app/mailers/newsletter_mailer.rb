@@ -1,9 +1,9 @@
 class NewsletterMailer < ActionMailer::Base
-  default from: "my_email@example.com"
+  default from: "bigscriv03@gmail.com"
 
   def monthly(newsletter)
     @newsletter = newsletter
-    mail to: Proc.new { Subscriber.pluck(:email) },
+    mail to: Subscriber.pull,
     subject: "#{@newsletter.title}"
   end
 end

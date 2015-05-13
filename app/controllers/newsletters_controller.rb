@@ -23,7 +23,6 @@ class NewslettersController < ApplicationController
   # POST /newsletters.json
   def create
     @newsletter = Newsletter.new(newsletter_params)
-
     NewsletterMailer.monthly(@newsletter).deliver
 
     respond_to do |format|
