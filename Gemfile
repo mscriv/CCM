@@ -6,7 +6,8 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'thin'
-
+gem 'stripe'
+gem 'annotate'
 
 gem 'jquery-rails'
 gem 'turbolinks'

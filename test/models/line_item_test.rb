@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: line_items
+#
+#  id         :integer          not null, primary key
+#  name       :string(255)
+#  amount     :decimal(, )
+#  quantity   :integer
+#  invoice_id :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 require 'test_helper'
 
 class LineItemTest < ActiveSupport::TestCase

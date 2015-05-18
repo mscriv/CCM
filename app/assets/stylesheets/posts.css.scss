@@ -3,8 +3,143 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
+/**
+ * 2col fluid+fixed
+ */
 html {
-  background-color: white
+background-color: white;
+margin: 0;
+padding: 0;
+
 }
 
+.header {
+  background-color: #ebca97;
+  background-image: url("//cdn2.hubspot.net/hub/53/file-2185775137-jpg/assets/blog.hubspot.com/images/banners/marketing-banner-125.jpg");
+  border-bottom: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(109,0,25,1) 45%, rgba(143,2,34,1) 100%);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 265px;
+}
+
+.header-info {
+  color: #fff;
+  font-size: 36px;
+  font-family: "Sentinel SSm A","Sentinel SSm B",serif;
+  letter-spacing: 0.06em;
+  display: inline;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.25;
+  border: 0px none rgb(255, 255, 255);
+  font: normal normal 300 normal 30px/37.5px;
+  margin: 30px 0px 0px;
+  outline: rgb(255, 255, 255) none 0px;
+  padding: 35px 0px 0px;
+}
+
+#P_1 {
+    box-sizing: border-box;
+    color: white;
+    height: 28px;
+    width: 570.78125px;
+    perspective-origin: 285.390625px 14px;
+    transform-origin: 285.390625px 14px;
+    border: 0px none rgb(121, 121, 121);
+    font: normal normal 600 normal 16px/28px proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 16px 0px 3px;
+    outline: rgb(121, 121, 121) none 0px;
+
+}/*#P_1*/
+
+
+#SPAN_1 {
+    box-sizing: border-box;
+    color: white;
+    letter-spacing: 1.62000000476837px;
+    text-rendering: optimizeLegibility;
+    border: 0px none rgb(79, 79, 79);
+    font: normal normal 300 normal 36px/45px 'Sentinel SSm A', 'Sentinel SSm B', serif;
+    outline: rgb(79, 79, 79) none 0px;
+
+}/*#SPAN_1*/
+
+
+.wrapper {
+  width:1000px;
+  margin: 0 auto;
+  
+}
+
+#main {
+float: right;
+width: 820px;
+padding: 10px;
+margin-left: 20px;
+
+}
+
+#sidebar {
+float: left;
+width: 180px;
+padding: 10px;
+border: 1px solid black;
+border-width: 2px;
+border-height:150px; overflow:auto;
+
+
+}
+
+
+.scrollable {
+    padding: 0% 10%;
+    position: relative;
+    border: 1px solid gray;
+    overflow: hidden;
+    height: 400px;
+}
+
+.scrollable.showScroll::after {
+    position: absolute;
+    content: '';
+    top: 5%;
+    right: 7px;
+    height: 90%;
+    width: 3px;
+    background: rgba(224, 224, 255, .3);
+}
+
+.scrollable .content-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-right: 50%;
+    overflow-y: scroll;
+}
+.scroller {
+    z-index: 5;
+    cursor: pointer;
+    position: absolute;
+    width: 10px;
+    border-radius: 5px;
+    background: rgb(111, 111, 190);
+    top: 0px;
+    right: 3px;
+    -webkit-transition: top .08s;
+    -moz-transition: top .08s;
+    -ms-transition: top .08s;
+    -o-transition: top .08s;
+    transition: top .08s;
+}
+.content {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

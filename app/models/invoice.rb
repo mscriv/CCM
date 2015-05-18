@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: invoices
+#
+#  id             :integer          not null, primary key
+#  invoice_number :string(255)
+#  created_at     :datetime
+#  updated_at     :datetime
+#  user_id        :integer
+#  amount_paid    :decimal(, )
+#
+
 class Invoice < ActiveRecord::Base
   belongs_to :user
   has_many :line_items

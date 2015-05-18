@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150513162110) do
+ActiveRecord::Schema.define(version: 20150514165632) do
 
   create_table "comments", force: true do |t|
     t.string   "name"
@@ -43,6 +43,18 @@ ActiveRecord::Schema.define(version: 20150513162110) do
   end
 
   add_index "line_items", ["invoice_id"], name: "index_line_items_on_invoice_id"
+
+  create_table "memberships", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "business_name"
+    t.string   "phone"
+    t.string   "email"
+    t.text     "business_needs"
+    t.text     "business_issues"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "newsletters", force: true do |t|
     t.string   "title"

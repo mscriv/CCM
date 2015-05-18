@@ -3,8 +3,9 @@
 <head>
   <title>ContinuityConsulting</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "https://js.stripe.com/v1/", "application" %>
   <%= csrf_meta_tags %>
+  <%= tag :meta, :name => "stripe-key", content: STRIPE_PUBLIC_KEY %>
 </head>
 
 <body>
@@ -15,9 +16,16 @@
   <% end %>
 </div>
 
-
+<nav class="logo">
+  <%= image_tag 'logo_1.png' %>
+</nav>
 <nav>
-
+  <%= link_to "Home", posts_path %>
+  <%= link_to "About", posts_path %>
+  <%= link_to "Blog", posts_path %>
+  <%= link_to "Newsletter", posts_path %>
+  <%= link_to "Mastermind Group", posts_path %>
+  <%= link_to "Contact Us", posts_path %>
   <% if current_user %>
          Welcome, <%= current_user.first_name %>.
       <%= link_to "Log Out", logout_path %>
@@ -27,9 +35,9 @@
        <%= link_to "Log In", login_path %>
     <% end %>
   </nav>
-
+<div>
 <%= yield %>
-
+</div>
 
 </body>
 </html>
