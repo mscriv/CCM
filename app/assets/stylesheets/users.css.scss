@@ -1,3 +1,18 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#{$all-button-inputs} {
+  @include button(shiny, rgba(120, 18, 11, 0.82));
+}
+
+
+
+.container {
+  @include display(flex);
+  @include align-items(center);
+  @include flex-direction(column);
+
+}

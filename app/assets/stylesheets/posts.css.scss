@@ -6,13 +6,10 @@
 /**
  * 2col fluid+fixed
  */
+
 html {
-background-color: white;
-margin: 0;
-padding: 0;
 
 }
-
 .header {
   background-color: #ebca97;
   background-image: url("//cdn2.hubspot.net/hub/53/file-2185775137-jpg/assets/blog.hubspot.com/images/banners/marketing-banner-125.jpg");
@@ -28,7 +25,7 @@ padding: 0;
 }
 
 .header-info {
-  color: #fff;
+  color: black;
   font-size: 36px;
   font-family: "Sentinel SSm A","Sentinel SSm B",serif;
   letter-spacing: 0.06em;
@@ -43,57 +40,31 @@ padding: 0;
   padding: 35px 0px 0px;
 }
 
-#P_1 {
-    box-sizing: border-box;
-    color: white;
-    height: 28px;
-    width: 570.78125px;
-    perspective-origin: 285.390625px 14px;
-    transform-origin: 285.390625px 14px;
-    border: 0px none rgb(121, 121, 121);
-    font: normal normal 600 normal 16px/28px proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 16px 0px 3px;
-    outline: rgb(121, 121, 121) none 0px;
-
-}/*#P_1*/
-
-
-#SPAN_1 {
-    box-sizing: border-box;
-    color: white;
-    letter-spacing: 1.62000000476837px;
-    text-rendering: optimizeLegibility;
-    border: 0px none rgb(79, 79, 79);
-    font: normal normal 300 normal 36px/45px 'Sentinel SSm A', 'Sentinel SSm B', serif;
-    outline: rgb(79, 79, 79) none 0px;
-
-}/*#SPAN_1*/
-
-
 .wrapper {
-  width:1000px;
-  margin: 0 auto;
-  
-}
-
-#main {
-float: right;
-width: 820px;
-padding: 10px;
-margin-left: 20px;
-
+  width:950px;
+  margin: 0px auto;
 }
 
 #sidebar {
 float: left;
-width: 180px;
-padding: 10px;
+width: 100px;
 border: 1px solid black;
 border-width: 2px;
 border-height:150px; overflow:auto;
+@include background(linear-gradient(white, white) left repeat);
+
+}
+
+
+#main {
+float: right;
+width: 850px;
+margin-left: 10px;
+@include background(linear-gradient(white, white) left repeat);
 
 
 }
+
 
 
 .scrollable {

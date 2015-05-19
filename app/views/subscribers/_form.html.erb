@@ -10,19 +10,27 @@
     </ul>
   </div>
 <% end %>
-  <div class="field">
+
+
+<form id=payment>
+  <fieldset>
+    <legend>Your details</legend>
+    <ol>
+      <li>
     <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
-  </div>
-  <div class="field">
+    <%= f.text_field :first_name, placeholder: "Enter First Name" %>
+      </li>
+      <li>
     <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="field">
+    <%= f.text_field :last_name, placeholder: "Enter Last Name" %>
+      </li>
+      <li>
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
+    <%= f.text_field :email, placeholder: "Enter Email" %>
+      </li>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Start Subscription"  %>
   </div>
-<% end %>
+  <% end %>
+ </fieldset>
+</form>

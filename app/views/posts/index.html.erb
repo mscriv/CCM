@@ -8,34 +8,38 @@
     </div>
   </div>
 </div>
+<body>
 
-<div class="wrapper">
-  <div id="main">
-    <p id="P_1">
-        <%= Post.first.created_at.strftime(' %b %d, %Y') %>
-    </p>
-      <span id="SPAN_1">
-        <%= Post.first.title %>
-      </span>
-      <p id="P_1">
-       <%= Post.first.body %>
-      </p>
-  </div>
+<div id="wrapper">
 
   <div id="sidebar" class="scrollable">
     <div class="content-wrapper">
       <div class="content">
 
         <% @post.each do |post| %>
-        <p id="P_1">
+        <p>
             <%= post.title %>
         </p>
-        <p id="P_1">
+        <p>
             <%= post.created_at.strftime(' %b %d, %Y') %>
         </p>
            <% end %>
       </div>
     </div>
   </div>
+
+  <div id="main">
+    <p>
+        <%= Post.first.created_at.strftime(' %b %d, %Y') %>
+    </p>
+      <span>
+        <%= Post.first.title %>
+      </span>
+      <p>
+       <%= Post.first.body %>
+      </p>
+  </div>
+
 </div>
+</body>
 </html>

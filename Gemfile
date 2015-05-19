@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'thin'
 gem 'stripe'
 gem 'annotate'
+gem 'bourbon'
 
 gem 'jquery-rails'
 gem 'turbolinks'

@@ -11,48 +11,51 @@
           </ul>
         </div>
     <% end %>
-
+    
+  <div class="container">
     <div class="field">
       <%= f.label :first_name %><br />
-      <%= f.text_field :first_name %>
+      <%= f.text_field :first_name, placeholder: "First Name", autofocus: true %>
     </div>
     <div class="field">
       <%= f.label :last_name %><br />
-      <%= f.text_field :last_name %>
+      <%= f.text_field :last_name, placeholder: "Last Name" %>
     </div>
 
     <div class="field">
       <%= f.label :business_name %><br />
-      <%= f.text_field :business_name %>
+      <%= f.text_field :business_name, placeholder: "Business Name" %>
     </div>
 
     <div class="field">
       <%= f.label :business_address %><br />
-      <%= f.text_field :business_address %>
+      <%= f.text_field :business_address, placeholder: "Business Address" %>
     </div>
 
     <div class="field">
       <%= f.label :naics_code %><br />
-      <%= f.number_field :naics_code %>
+      <%= f.number_field :naics_code, placeholder: "Naics Code" %>
     </div>
 
 
     <div class="field">
       <%= f.label :industry %><br />
-      <%= f.text_field :industry %>
+      <%= f.text_field :industry, placeholder: "Industry" %>
     </div>
 
     <div class="field">
       <%= f.label :email %><br />
-      <%= f.text_field :email %>
+      <%= f.text_field :email, placeholder: "Email" %>
     </div>
     <div class="field">
       <%= f.label :password %><br />
-      <%= f.password_field :password %>
+      <%= f.password_field :password, placeholder: "Create Password" %>
     </div>
     <div class="field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation %>
+      <%= f.label :confirm_password %><br />
+      <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
     </div>
+
     <div class="actions"><%= f.submit "Sign Up" %></div>
-<% end %>
+      <% end %>
+    </div>
