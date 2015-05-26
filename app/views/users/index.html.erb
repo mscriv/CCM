@@ -8,13 +8,17 @@
     <div class="row">
       <% @users.each do |user| %>
         <ul>
+          <div>
          <li><%= user.first_name %></li>
          <li><%= user.last_name %></li>
          <li><%= user.phone %></li>
          <li><%= user.email %></li>
+          </div>
+          <div>
          <li><%= user.business_name %></li>
          <li><%= user.industry %></li>
          <li><%= user.naics_code %></li>
-       </ul> 
+          </div>
+       </ul>
              <% end %>
     </div>

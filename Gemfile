@@ -9,6 +9,8 @@ gem 'thin'
 gem 'stripe'
 gem 'annotate'
 gem 'bourbon'
+gem "figaro"
+
 
 gem 'jquery-rails'
 gem 'turbolinks'
