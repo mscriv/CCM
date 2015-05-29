@@ -5,20 +5,33 @@
 
 
   <h1>Contacts</h1>
-    <div class="row">
-      <% @users.each do |user| %>
-        <ul>
-          <div>
-         <li><%= user.first_name %></li>
-         <li><%= user.last_name %></li>
-         <li><%= user.phone %></li>
-         <li><%= user.email %></li>
-          </div>
-          <div>
-         <li><%= user.business_name %></li>
-         <li><%= user.industry %></li>
-         <li><%= user.naics_code %></li>
-          </div>
-       </ul>
-             <% end %>
+
+    <div class="cards-wrapper">
+      <% @users+.each do |user| %>
+
+
+    <div class="card female">
+        <header>
+            <div class="avatar-wrapper"><span>&nbsp;</span><img class="avatar" src="http://api.randomuser.me/portraits/women/40.jpg"></div>
+            <div class="info-wrapper">
+                <h4><span><%= user.first_name %></span><span> </span><span><%= user.last_name %></span></h4>
+                <ul class="meta">
+                    <li><span><%= user.industry %></span></li>
+                    <li><span><%= user.naics_code %></span></li>
+                </ul>
+            </div>
+        </header>
+        <div class="card-body">
+            <div class="headline">
+                <p><%= user.business_name %></p>
+            </div>
+            <ul class="contact-info">
+                <li><span> </span><span><%= user.phone %> </span></li>
+                <li><span> </span><span><%= user.email %></span></li>
+            </ul>
+        </div>
     </div>
+
+             <% end %>
+             </div>
+

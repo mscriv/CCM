@@ -14,15 +14,29 @@ body {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	padding: 20px;
 }
+.signup {
+	width: 400px;
+	margin: 50px auto;
+}
+.signup h1 {
+	color: #fff;
+	padding: 20px 0;
+}
+.field {
+	margin-bottom: 10px;
+}
+.field label {
+	line-height: 30px;
+	color: #600805;
+	text-align: left
+}
 
   form {
-	background: rgba(178, 174, 41, 0.8);
+	background: rgba(252, 247, 217, 0.8);
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	padding: 20px;
-	width: 400px;
-  text-align: center;
 }
 
 fieldset {
@@ -98,4 +112,7 @@ fieldset fieldset label:hover {
 input:not([type=submit]):focus,
  textarea:focus {
 	background: #eaeaea;
+}
+.field input{
+	padding : 10px 10px;
 }

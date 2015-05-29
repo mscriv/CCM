@@ -1,3 +1,5 @@
+<div class="signup">
+<h1>New membership</h1>
 <%= form_for(@membership) do |f| %>
   <% if @membership.errors.any? %>
     <div id="error_explanation">
@@ -12,50 +14,51 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :first_name %><br>
+    <%= f.label :first_name %>
     <%= f.text_field :first_name %>
   </div>
   <div class="field">
-    <%= f.label :last_name %><br>
+    <%= f.label :last_name %>
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
-    <%= f.label :business_name %><br>
+    <%= f.label :business_name %>
     <%= f.text_field :business_name %>
   </div>
   <div class="field">
-    <%= f.label :phone %><br>
+    <%= f.label :phone %>
     <%= f.text_field :phone %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
+    <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :business_needs %><br>
+    <%= f.label :business_needs %>
     <%= f.text_area :business_needs %>
   </div>
   <div class="field">
-    <%= f.label :business_issues %><br>
+    <%= f.label :business_issues %>
     <%= f.text_area :business_issues %>
   </div>
 
 
   <div class="field">
-    <%= label_tag :card_number, "Card Number" %><br>
+    <%= label_tag :card_number, "Card Number" %>
     <%= text_field_tag :card_number, nil, { name: nil, :'data-stripe' => "number", class: "form-control" } %>
   </div>
   <div class="field">
-    <%= label_tag :card_code, "CVV Number" %><br>
+    <%= label_tag :card_code, "CVV Number" %>
     <%= text_field_tag :card_code, nil, { name: nil, :'data-stripe' => "cvc", class: "form-control" } %>
   </div>
   <div class="field">
-    <%= label_tag :card_month, "Expiration" %><br>
+    <%= label_tag :card_month, "Expiration" %>
     <%= select_month nil, {add_month_numbers: true}, {name: nil, :'data-stripe' => "exp-month", class: "form-control" }  %>
     <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, :'data-stripe' => "exp-month", class: "form-control" } %>
   </div>
-
+<hr>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+ </div>

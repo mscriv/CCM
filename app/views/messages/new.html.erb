@@ -1,3 +1,4 @@
+<div class="signup">
 <h1>Contact Us</h1>
 
 <%= form_for @message do |f| %>
@@ -12,21 +13,22 @@
         </div>
     <% end %>
     <div class="field">
-      <%= f.label :name %><br />
+      <%= f.label :name %>
       <%= f.text_field :name %>
     </div>
 
     <div class="field">
-      <%= f.label :subject %><br />
+      <%= f.label :subject %>
       <%= f.text_field :subject %>
     </div>
     <div class="field">
-      <%= f.label :email %><br />
+      <%= f.label :email %>
       <%= f.text_field :email %>
     </div>
     <div class="field">
-      <%= f.label :content, "Message" %><br />
+      <%= f.label :content, "Message" %>
       <%= f.text_area :content %>
     </div>
     <div class="actions"><%= f.submit "Send Message" %></div>
 <% end %>
+</div>

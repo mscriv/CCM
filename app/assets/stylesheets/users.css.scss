@@ -8,7 +8,11 @@
   @include button(shiny, rgba(120, 18, 11, 0.82));
 }
 
-
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 
 .container {
   @include display(flex);
@@ -16,3 +20,105 @@
   @include flex-direction(column);
 
 }
+.cards-wrapper {
+  position: relative;
+  text-align: left;
+  width: 980px;
+  margin: 0 auto;
+}
+.cards-wrapper .card header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cards-wrapper .card {
+  background: #fff;
+  margin-bottom: 2rem;
+}
+.cards-wrapper .card .card-body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.avatar {
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  background-color: #FFF;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 0.5rem;
+  border: 3px solid #fff;
+}
+.cards-wrapper .card {
+  float: left;
+  display: block;
+  margin-right: 1%;
+  width: 31.76157%;
+}
+.cards-wrapper .card header {
+  padding: 1rem;
+  color: #600805;
+  margin-bottom: 0.5em;
+}
+.cards-wrapper .card header .info-wrapper {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+}
+.cards-wrapper .card header .info-wrapper:last-child {
+  margin-right: 0;
+}
+.mrgn { margin-right:0!important ;}
+.cards-wrapper .card header h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cards-wrapper .card.female header {
+  background: none repeat scroll 0% 0% rgba(252, 247, 217, 0.8)
+}
+.cards-wrapper .card.male header {
+  background: #5faee3;
+}
+.cards-wrapper .card header .avatar-wrapper .avatar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.cards-wrapper .card header .info-wrapper {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  text-align: left;
+}
+.cards-wrapper .card header .avatar-wrapper {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  position: relative;
+}
+.cards-wrapper .card .card-body {
+  padding: 1rem;
+  
+}
+.cards-wrapper .card .info-wrapper li { text-align: left!important; }
+.cards-wrapper .card .headline {
+  height: 3em;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+.cards-wrapper .card .contact-info {
+  margin: -1rem;
+  padding: 1rem;
+  background: #d9dcde;
+}
+.cards-wrapper .card .contact-info  li { text-align: left; }
