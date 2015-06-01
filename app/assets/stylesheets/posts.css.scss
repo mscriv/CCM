@@ -12,7 +12,7 @@ html {
 }
 .header {
   background-color: #ebca97;
-1  background-image: url("//cdn2.hubspot.net/hub/53/file-2185775137-jpg/assets/blog.hubspot.com/images/banners/marketing-banner-125.jpg");
+  background-image: url("//cdn2.hubspot.net/hub/53/file-2185775137-jpg/assets/blog.hubspot.com/images/banners/marketing-banner-125.jpg");
   border-bottom: 4px;
   border-bottom-style: solid;
   border-bottom-color: -webkit-linear-gradient(left, rgba(169,3,41,1) 0%, rgba(109,0,25,1) 45%, rgba(143,2,34,1) 100%);
@@ -56,7 +56,7 @@ html {
   border: 1px solid black;
   border-width: 2px;
   border-height:150px; overflow:auto;
-  @include background(linear-gradient(white, white) left repeat);
+ @include background(linear-gradient(white, white) left repeat);
 }
 
 
