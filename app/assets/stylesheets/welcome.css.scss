@@ -16,13 +16,12 @@ html {
   background: -ms-linear-gradient(top,  #5c0404 0%,#fdbc06 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #5c0404 0%,#fdbc06 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c0404', endColorstr='#fdbc06',GradientType=0 ); /* IE6-9 */
-
   background-repeat: no-repeat;
   height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a {
