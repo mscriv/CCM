@@ -35,6 +35,8 @@ Rails.application.routes.draw do
 
   get 'pages/about'
 
+  get 'pages/leadership'
+
   get 'pages/contact'
 
   get 'pages/small_businesses'
@@ -44,6 +46,9 @@ Rails.application.routes.draw do
   get 'pages/government'
 
   get 'welcome/index'
+  get 'pages/core_values'
+  get 'pages/services'
+  get 'pages/company_profile'
 
 
 
